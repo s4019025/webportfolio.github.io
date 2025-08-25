@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works - Hoa Thanh Que</title>
+    <link rel="stylesheet" href="works.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-container">
+            <div class="loading-spinner">
+                <div class="loading-floating-element"></div>
+                <div class="loading-floating-element"></div>
+                <div class="loading-floating-element"></div>
+                <div class="loading-floating-element"></div>
+            </div>
+            <div class="loading-text">Loading...</div>
+            <div class="loading-subtitle">Please wait while we prepare your experience</div>
+            <div class="loading-progress">
+                <div class="loading-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- SVG Filters for Squiggly Text Animation -->
+    <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true">
+        <defs>
+            <filter id="squiggly-0">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-1">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-2">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-3">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-4">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <!-- Subtle squiggly filters -->
+            <filter id="squiggly-subtle-0">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" result="noise" seed="0"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-subtle-1">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" result="noise" seed="1"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+        </defs>
+    </svg>
+    
+    <div class="works">
+        <div class="div">
+          <div class="overlap">
+            <div class="overlap-group">
+              <header class="header">
+                <div class="overlap-group-2">
+                  <div class="rectangle"></div>
+                  <div class="rectangle-2"></div>
+                </div>
+              </header>
+              <div class="text-div">
+                <a href="../about/about.html" class="text-wrapper-3">About</a>
+                <a href="works.html" class="text-wrapper-2">Works</a>
+             
+                <a href="../contact/contacts.html" class="text-wrapper">Contacts</a>
+             
+              </div>
+          
+         
+              <p class="COOK-GALLERRY">
+                <span class="span squiggly-text">C</span>
+                <span class="text-wrapper-4 squiggly-text-slow">O</span>
+                <span class="text-wrapper-5 squiggly-text">O</span>
+                <span class="text-wrapper-6 squiggly-text-fast">K GALLERRY</span>
+              </p>
+              <img class="u" src="đầu.png" />
+              <img class="tay-v" src="tay vẽ.png" />
+            </div>
+                          <a href="../index.html"><img class="logo-homepage" src="logo Homepage.png" /></a>
+          </div>
+          
+          <!-- Swiper Container -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+              
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="slide-content">
+                  <a href ="../work1/work1.html">
+                                      <img class="slide-image-1" src="art1.png" />
+                  <div class="slide-counter-wrapper">
+                    <div class="slide-counter-1 squiggly-text-fast">1</div>
+                    <div class="sub-slide-counter-1 squiggly-text">1</div>
+                  </div>
+                  <div class="slide-title-1 squiggly-text-subtle">Traditional fbf pencil-drawn animation.</div>
+                </div>
+              </div>
+              
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div class="slide-content">
+                  <a href ="../work2/work2.html">
+                                      <img class="slide-image-2" src="art2.png" />
+                  <div class="slide-counter-wrapper">
+                    <div class="slide-counter-2 squiggly-text-fast">2</div>
+                    <div class="sub-slide-counter-2 squiggly-text">2</div>
+                  </div>
+                  <div class="slide-title-2 squiggly-text-subtle">2d Character Design.</div>
+                </div>
+              </div>
+              
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div class="slide-content">
+                  <a href ="../work3/work3.html">
+                                      <img class="slide-image-3" src="art3.png" />
+                  <div class="slide-counter-wrapper">
+                    <div class="slide-counter-3 squiggly-text-fast">3</div>
+                    <div class="sub-slide-counter-3 squiggly-text">3</div>
+                  </div>
+                  <div class="slide-title-3 squiggly-text-subtle">Game Poster Design.</div>
+                </div>
+              </div>
+              
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <div class="slide-content">
+                  <a href ="../work4/work4.html">
+                                      <img class="slide-image-4" src="art4.png" />
+                  <div class="slide-counter-wrapper">
+                    <div class="slide-counter-4 squiggly-text-fast">4</div>
+                    <div class="sub-slide-counter-4 squiggly-text">4</div>
+                  </div>
+                  <div class="slide-title-4 squiggly-text-subtle">Frame by frame 2D animation.</div>
+                </div>
+              </div>
+
+              <!-- Slide 5 -->
+              <div class="swiper-slide">
+                <div class="slide-content">
+                  <a href ="../work5/work5.html">
+                                      <img class="slide-image-5" src="Untitled_Artwork 17 1.png" />
+                  <div class="slide-counter-wrapper">
+                    <div class="slide-counter-5 squiggly-text-fast">5</div>
+                    <div class="sub-slide-counter-5 squiggly-text">5</div>
+                  </div>
+                  <div class="slide-title-5 squiggly-text-subtle">Key-frame 2D animation.</div>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+      <div class="footer squiggly-text-slow">@2025 XiaoKai. All Rights Reserved.</div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../shared/script.js"></script>
+</body>
+</html>

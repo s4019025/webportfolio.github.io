@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work 2 - Zaonie Character Design</title>
+    <link rel="stylesheet" href="work2.css">
+</head>
+<body>
+   <!-- SVG Filters for Squiggly Text Animation -->
+   <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true">
+       <defs>
+           <filter id="squiggly-0">
+               <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+               <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+           </filter>
+           <filter id="squiggly-1">
+               <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+               <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+           </filter>
+           <filter id="squiggly-2">
+               <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+               <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+           </filter>
+           <filter id="squiggly-3">
+               <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+               <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+           </filter>
+           <filter id="squiggly-4">
+               <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+               <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+           </filter>
+           <!-- Subtle squiggly filters -->
+           <filter id="squiggly-subtle-0">
+               <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" result="noise" seed="0"/>
+               <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+           </filter>
+           <filter id="squiggly-subtle-1">
+               <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" result="noise" seed="1"/>
+               <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+           </filter>
+       </defs>
+   </svg>
+   
+   <div class="main-container">
+  <div class="nav-bg-accent"></div>
+  <div class="nav-bg-primary"></div>
+  <a href="../contact/contacts.html" class="nav-contacts">Contacts</a>
+  <a href="../works/works.html" class="nav-works">Works</a>
+  <a href="../about/about.html" class="nav-about">About</a>
+  <a href="../index.html"><img class="logo" src="logo Homepage.png" alt="Logo" /></a>
+  <div class="title-container">
+    <span class="title-c squiggly-text">C</span>
+    <span class="title-o squiggly-text-slow">O</span>
+    <span class="title-o2 squiggly-text">O</span>
+    <span class="title-k squiggly-text-fast">K GALLERRY</span>
+  </div>
+  <div class="project-title squiggly-text-subtle">ZAONIE (Character Design)</div>
+  <div class="section-title-intro squiggly-text-fast">CHARACTER INTRODUCTION</div>
+  <div class="section-title-rotation squiggly-text">ROTATION SHEET</div>
+  <div class="section-title-storyboard squiggly-text-slow">STORY BOARD</div>
+  <div class="view-label-front squiggly-text-subtle">Front</div>
+  <div class="view-label-side squiggly-text-subtle">Side</div>
+  <div class="view-label-back squiggly-text-subtle">Back</div>
+  <div class="view-label-3-4 squiggly-text-subtle">3/4</div>
+  <div class="section-title-emotions squiggly-text-fast">EMOTIONS</div>
+  <img class="decorative-element-1" src="Đầu.png" alt="Decorative element" />
+  <img class="decorative-element-2" src="Tay vẽ-1.png" alt="Decorative element" />
+  <div class="hashtag-character squiggly-text-fast">#CharacterDesign</div>
+  <div class="hashtag-procreate squiggly-text">#Procreate</div>
+  <div class="hashtag-2d squiggly-text-slow">#2Ddesign</div>
+  <img class="decorative-element-3" src="Tay vẽ.png" alt="Decorative element" />
+  <div class="work-number squiggly-text-fast">2</div>
+  <div class="work-number-dot squiggly-text">2.</div>
+  <img class="character-main" src="Con nhân vậ.png" alt="Zaonie Character" />
+  <div class="character-description squiggly-text-subtle">Name: Zaonie (The Nature Absolute Being)<br/>Characteristic: Bold, Calm<br/>BackStory: Once the spirit of the Earth, Zaonie nurtured all life with love and care. But over time, humans grew greedy, destroying forests, depleting resources, and polluting skies and seas. Zaonie's body cracked, and her heart turned to stone.</div>
+  <img class="rotation-sheet" src="ROTATION SHEET (1) 1.png" alt="Rotation Sheet" />
+  <img class="emotions" src="Emotions.png" alt="Character Emotions" />
+  <img class="storyboard-main" src="storryboard1.png" alt="Storyboard" />
+  <img class="storyboard-secondary" src="Storyboard2.png" alt="Storyboard 2" />
+  
+  <!-- Footer -->
+  <div class="footer squiggly-text-slow">@2025 XiaoKai. All Rights Reserved.</div>
+  <a href="../work3/work3.html"><img src = "next.png" class="next-button"></a>
+</div>
+</body>
+</html>

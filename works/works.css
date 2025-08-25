@@ -1,0 +1,810 @@
+.works {
+    background-color   : #ffffff;
+    display            : grid;
+    justify-items      : center;
+    align-items        : start;
+    /* width           : 100vw; */
+}
+
+/* Squiggly Text Animation */
+.squiggly-text {
+    filter   : url('#squiggly');
+    animation: squiggly 0.5s infinite;
+}
+
+.squiggly-text-slow {
+    filter   : url('#squiggly');
+    animation: squiggly 1s infinite;
+}
+
+.squiggly-text-fast {
+    filter   : url('#squiggly');
+    animation: squiggly 0.3s infinite;
+}
+
+.squiggly-text-subtle {
+    filter   : url('#squiggly-subtle');
+    animation: squiggly-subtle 0.8s infinite;
+}
+
+@keyframes squiggly {
+    0% {
+        filter: url('#squiggly-0');
+    }
+
+    25% {
+        filter: url('#squiggly-1');
+    }
+
+    50% {
+        filter: url('#squiggly-2');
+    }
+
+    75% {
+        filter: url('#squiggly-3');
+    }
+
+    100% {
+        filter: url('#squiggly-4');
+    }
+}
+
+@keyframes squiggly-subtle {
+    0% {
+        filter: url('#squiggly-subtle-0');
+    }
+
+    50% {
+        filter: url('#squiggly-subtle-1');
+    }
+
+    100% {
+        filter: url('#squiggly-subtle-0');
+    }
+}
+
+body {
+    margin: none !important;
+    cursor: url('../shared/cursor.png') 0 0, auto;
+}
+
+/* Interactive elements cursor */
+a,
+button,
+input,
+textarea,
+select,
+[role="button"] {
+    cursor: url('../shared/cursor.png') 0 0, pointer;
+}
+
+.works .div {
+    background-color: #ffffff;
+    width           : 100%;
+    height          : 1026px;
+    position        : relative;
+}
+
+.works .overlap {
+    position: absolute;
+    height  : 262px;
+    top     : 0;
+    width   : 100%;
+    left    : 13px;
+}
+
+.works .overlap-group {
+    position: absolute;
+    width   : 100%;
+    height  : 262px;
+    top     : 0;
+    left    : 66px;
+}
+
+.works .header {
+    position        : absolute;
+    width           : 414px;
+    height          : 66px;
+    top             : 45px;
+    left            : 63%;
+    background-color: transparent;
+}
+
+.works .overlap-group-2 {
+    position: relative;
+    width   : 414px;
+    height  : 66px;
+}
+
+.works .rectangle {
+    top             : 6px;
+    left            : 13px;
+    background-color: #00c7ae;
+    position        : absolute;
+    width           : 401px;
+    height          : 59px;
+    border-radius   : 22px;
+}
+
+.works .rectangle-2 {
+    top             : 0;
+    left            : 0;
+    background-color: #ff90b7;
+    position        : absolute;
+    width           : 401px;
+    height          : 59px;
+    border-radius   : 22px;
+}
+
+.works .text-wrapper {
+    position       : relative;
+    width          : 126px;
+    font-family    : "Chelsea Market", cursive;
+    font-weight    : 400;
+    text-decoration: none;
+    color          : #ffffff;
+    font-size      : 22px;
+    letter-spacing : 1.73px;
+    line-height    : 28px;
+}
+
+.works .vector {
+    top     : 56px;
+    left    : 1055px;
+    position: absolute;
+    width   : 2px;
+    height  : 38px;
+}
+
+.works .text-div {
+    width          : 300px;
+    height         : 100px;
+    position       : absolute;
+    left           : 64%;
+    top            : 28px;
+    gap            : 25px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.works .text-wrapper-2 {
+    position       : relative;
+    width          : 86px;
+    padding-right  : 10px;
+    font-family    : "Chelsea Market", cursive;
+    font-weight    : 400;
+    text-decoration: none;
+    color          : #ffffff;
+    font-size      : 22px;
+    border-right   : 2px solid #ffffff;
+    letter-spacing : 1.73px;
+    line-height    : 28px;
+}
+
+.works .text-wrapper-3 {
+    position       : relative;
+    width          : 100px;
+    padding-right  : 10px;
+    font-family    : "Chelsea Market", cursive;
+    font-weight    : 400;
+    border-right   : 2px solid #ffffff;
+    color          : #ffffff;
+    font-size      : 29px;
+    letter-spacing : 2.30px;
+    line-height    : 37px;
+    text-decoration: none;
+}
+
+.works .img {
+    top     : 55px;
+    left    : 958px;
+    position: absolute;
+    width   : 2px;
+    height  : 38px;
+}
+
+.works .COOK-GALLERRY {
+    position      : absolute;
+    width         : 818px;
+    top           : 66px;
+    left          : 25%;
+    font-family   : "Chelsea Market", cursive;
+    font-weight   : 400;
+    color         : transparent;
+    font-size     : 84px;
+    letter-spacing: 6.72px;
+    line-height   : 84px;
+    white-space   : nowrap;
+}
+
+.works .span {
+    color         : #257ff5;
+    letter-spacing: 9.41px;
+    line-height   : 108px;
+}
+
+.works .text-wrapper-4 {
+    color         : #f4dd00;
+    font-size     : 108px;
+    letter-spacing: 15.55px;
+    line-height   : 138px;
+}
+
+.works .text-wrapper-5 {
+    color         : #257ff5;
+    font-size     : 108px;
+    letter-spacing: 15.55px;
+    line-height   : 138px;
+}
+
+.works .text-wrapper-6 {
+    color         : #f4dd00;
+    letter-spacing: 9.41px;
+    line-height   : 108px;
+}
+
+.works .u {
+
+    width           : 705.32px;
+    height          : 428.86px;
+    left            : 658.73px;
+    top             : -100px;
+    position        : absolute;
+    transform       : rotate(149deg);
+    transform-origin: top left;
+    transition      : transform 0.3s ease;
+}
+
+.works .u:hover {
+    transform: rotate(149deg) translateY(-135px);
+}
+
+.works .tay-v {
+    position    : absolute;
+    width       : 174px;
+    height      : 98px;
+    top         : 165px;
+    left        : 17%;
+    aspect-ratio: 1.8;
+}
+
+.works .logo-homepage {
+    position    : absolute;
+    width       : 136px;
+    height      : 136px;
+    top         : 18px;
+    left        : 0;
+    aspect-ratio: 1;
+    transition  : transform 0.3s ease;
+}
+
+.works .logo-homepage:hover {
+    transform: scale(1.1);
+}
+
+/* Swiper Container Styles */
+.works .swiper-container {
+    position: absolute;
+    width   : 100%;
+    height  : 609px;
+    top     : 287px;
+    left    : 38px;
+    overflow: hidden;
+}
+
+.works .swiper-wrapper {
+    height: 100%;
+}
+
+.works .swiper-slide {
+    position: relative;
+    width   : 100%;
+    height  : 100%;
+}
+
+.works .slide-content {
+    position: relative;
+    width   : 100%;
+    height  : 100%;
+}
+
+/* Slide Images */
+.works .slide-image-1 {
+    position    : absolute;
+    width       : 407px;
+    height      : 377px;
+    top         : 21px;
+    left        : 0;
+    aspect-ratio: 1.08;
+    transition  : all 0.3s ease;
+
+    transform-origin: center center;
+}
+
+.works .slide-image-1:hover {
+    transform: scale(1.3);
+    z-index  : 9999;
+}
+
+.works .slide-image-2 {
+    position    : absolute;
+    width       : 336px;
+    height      : 387px;
+    top         : 21px;
+    left        : 0;
+    aspect-ratio: 0.87;
+    transition  : all 0.3s ease;
+
+    transform-origin: center center;
+}
+
+.works .slide-image-2:hover {
+    transform: scale(1.3);
+    z-index  : 9999;
+}
+
+.works .slide-image-3 {
+    position    : absolute;
+    width       : 345px;
+    height      : 347px;
+    top         : 21px;
+    left        : 0;
+    aspect-ratio: 0.99;
+    transition  : all 0.3s ease;
+
+    transform-origin: center center;
+}
+
+.works .slide-image-3:hover {
+    transform: scale(1.3);
+    z-index  : 9999;
+}
+
+.works .slide-image-4 {
+    position    : absolute;
+    width       : 345px;
+    height      : 347px;
+    top         : 21px;
+    left        : 0;
+    aspect-ratio: 0.99;
+    transition  : all 0.3s ease;
+
+    transform-origin: center center;
+}
+
+.works .slide-image-4:hover {
+    transform: scale(1.3);
+    z-index  : 9999;
+}
+
+.works .slide-image-5 {
+    position    : absolute;
+    width       : 345px;
+    height      : 347px;
+    top         : 21px;
+    left        : 0;
+    aspect-ratio: 0.99;
+    transition  : all 0.3s ease;
+
+    transform-origin: center center;
+}
+
+.works .slide-image-5:hover {
+    transform: scale(1.3);
+    z-index  : 9999;
+}
+
+
+/* Slide Counter Wrapper */
+.works .slide-counter-wrapper {
+    position: absolute;
+    width   : 46px;
+    height  : 96px;
+    top     : 2px;
+    left    : 86px;
+}
+
+.works .slide-counter-1,
+.works .slide-counter-2,
+.works .slide-counter-3,
+.works .slide-counter-4,
+.works .slide-counter-5 {
+    width         : 41px;
+    top           : 0;
+    left          : 0;
+    position      : absolute;
+    font-family   : "Chelsea Market", cursive;
+    font-weight   : 400;
+    font-size     : 108px;
+    letter-spacing: 8.64px;
+    line-height   : 138px;
+    white-space   : nowrap;
+}
+
+.works .slide-counter-1 {
+    color: #00C7AE;
+}
+
+.works .slide-counter-2 {
+    color: #FF90B7;
+}
+
+.works .slide-counter-3 {
+    color: #F4DD00;
+}
+
+.works .slide-counter-4 {
+    color: #257FF5;
+}
+
+.works .slide-counter-5 {
+    color: #F4DD00;
+}
+
+.works .sub-slide-counter-1,
+.works .sub-slide-counter-2,
+.works .sub-slide-counter-3,
+.works .sub-slide-counter-4,
+.works .sub-slide-counter-5 {
+    width         : 41px;
+    top           : 4px;
+    left          : 3px;
+    position      : absolute;
+    font-family   : "Chelsea Market", cursive;
+    font-weight   : 400;
+    font-size     : 108px;
+    letter-spacing: 8.64px;
+    line-height   : 138px;
+    white-space   : nowrap;
+}
+
+.works .sub-slide-counter-1 {
+    color: #257FF5;
+}
+
+.works .sub-slide-counter-2 {
+    color: #00C7AE;
+}
+
+.works .sub-slide-counter-3 {
+    color: #FF90B7;
+}
+
+.works .sub-slide-counter-4 {
+    color: #00C7AE;
+}
+
+.works .sub-slide-counter-5 {
+    color: #257FF5;
+}
+
+/* Slide Titles */
+.works .slide-title-1 {
+    position      : absolute;
+    width         : 266px;
+    top           : 407px;
+    left          : 16px;
+    font-family   : "Chelsea Market", cursive;
+    font-weight   : 400;
+    color         : #257ff5;
+    font-size     : 36px;
+    letter-spacing: 0;
+    line-height   : normal;
+}
+
+.works .slide-title-2 {
+    position      : absolute;
+    width         : 266px;
+    top           : 407px;
+    left          : 16px;
+    font-family   : "Chelsea Market", cursive;
+    font-weight   : 400;
+    color         : #257ff5;
+    font-size     : 36px;
+    letter-spacing: 0;
+    line-height   : normal;
+}
+
+.works .slide-title-3 {
+    position      : absolute;
+    width         : 266px;
+    top           : 407px;
+    left          : 16px;
+    font-family   : "Chelsea Market", cursive;
+    font-weight   : 400;
+    color         : #257ff5;
+    font-size     : 36px;
+    letter-spacing: 0;
+    line-height   : normal;
+}
+
+.works .slide-title-4 {
+    position      : absolute;
+    width         : 266px;
+    top           : 407px;
+    left          : 16px;
+    font-family   : "Chelsea Market", cursive;
+    font-weight   : 400;
+    color         : #257ff5;
+    font-size     : 36px;
+    letter-spacing: 0;
+    line-height   : normal;
+}
+
+.works .slide-title-5 {
+    position      : absolute;
+    width         : 266px;
+    top           : 407px;
+    left          : 16px;
+    font-family   : "Chelsea Market", cursive;
+    font-weight   : 400;
+    color         : #257ff5;
+    font-size     : 36px;
+    letter-spacing: 0;
+    line-height   : normal;
+}
+
+/* Swiper Navigation Styles */
+/* .works .swiper-button-next,
+.works .swiper-button-prev {
+    color           : #00c7ae;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius   : 50%;
+    width           : 32px;
+    height          : 32px;
+}
+
+.works .swiper-button-next:after,
+.works .swiper-button-prev:after {
+    font-size  : 14px;
+    font-weight: bold;
+}
+
+.works .swiper-pagination {
+    bottom: 16px;
+} */
+
+/* .works .swiper-pagination-bullet {
+    background-color: #00c7ae;
+    opacity         : 0.5;
+}
+
+.works .swiper-pagination-bullet-active {
+    opacity         : 1;
+    background-color: #ff90b7;
+} */
+
+/* Custom Loading Animation */
+.loading-overlay {
+    position       : fixed;
+    top            : 0;
+    left           : 0;
+    width          : 100%;
+    height         : 100%;
+    background     : white;
+    display        : none;
+    justify-content: center;
+    align-items    : center;
+    z-index        : 99999;
+    backdrop-filter: blur(5px);
+}
+
+.loading-overlay.show {
+    display  : flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.loading-container {
+    text-align: center;
+    color     : white;
+}
+
+.loading-spinner {
+    width   : 80px;
+    height  : 80px;
+    margin  : 0 auto 20px;
+    position: relative;
+}
+
+.loading-spinner::before,
+.loading-spinner::after {
+    content      : '';
+    position     : absolute;
+    border-radius: 50%;
+    animation    : spin 2s linear infinite;
+}
+
+.loading-spinner::before {
+    width          : 100%;
+    height         : 100%;
+    background     : linear-gradient(45deg, #00c7ae, #ff90b7, #f4dd00, #257ff5);
+    background-size: 400% 400%;
+    animation      : spin 2s linear infinite, gradientShift 3s ease infinite;
+}
+
+.loading-spinner::after {
+    width     : 70%;
+    height    : 70%;
+    top       : 15%;
+    left      : 15%;
+    background: rgba(0, 0, 0, 0.9);
+    animation : spin 1.5s linear infinite reverse;
+}
+
+.loading-text {
+    font-family   : "Chelsea Market", cursive;
+    font-size     : 24px;
+    color         : #ffffff;
+    margin-top    : 20px;
+    letter-spacing: 2px;
+    animation     : pulse 2s ease-in-out infinite;
+}
+
+.loading-subtitle {
+    font-family: "Chelsea Market", cursive;
+    font-size  : 16px;
+    color      : #00c7ae;
+    margin-top : 10px;
+    opacity    : 0.8;
+}
+
+/* Loading Animation Keyframes */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity  : 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity  : 0.7;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Floating elements around the spinner */
+.loading-floating-element {
+    position     : absolute;
+    width        : 20px;
+    height       : 20px;
+    background   : #f4dd00;
+    border-radius: 50%;
+    animation    : orbit 4s linear infinite;
+}
+
+.loading-floating-element:nth-child(1) {
+    top            : -30px;
+    left           : 50%;
+    transform      : translateX(-50%);
+    background     : #f4dd00;
+    animation-delay: 0s;
+}
+
+.loading-floating-element:nth-child(2) {
+    top            : 50%;
+    right          : -30px;
+    transform      : translateY(-50%);
+    background     : #00d6b7;
+    animation-delay: 0s;
+}
+
+.loading-floating-element:nth-child(3) {
+    bottom         : -30px;
+    left           : 50%;
+    transform      : translateX(-50%);
+    background     : #257ff5;
+    animation-delay: 0s;
+}
+
+.loading-floating-element:nth-child(4) {
+    top            : 50%;
+    left           : -30px;
+    transform      : translateY(-50%);
+    background     : #ff90b7;
+    animation-delay: 0s;
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(40px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(40px) rotate(-360deg);
+    }
+}
+
+/* Loading progress bar */
+.loading-progress {
+    width        : 200px;
+    height       : 4px;
+    background   : rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    margin       : 20px auto 0;
+    overflow     : hidden;
+}
+
+.footer {
+    width         : 806px;
+    height        : 64px;
+    left          : 33%;
+    position      : absolute;
+    color         : #00C7AE;
+    font-size     : 30px;
+    font-family   : Chelsea Market;
+    font-weight   : 400;
+    line-height   : 99px;
+    letter-spacing: 6px;
+    word-wrap     : break-word;
+}
+
+.loading-progress-bar {
+    height       : 100%;
+    background   : linear-gradient(90deg, #00c7ae, #ff90b7, #f4dd00, #257ff5);
+    width        : 0%;
+    border-radius: 2px;
+    animation    : progressFill 2s ease-in-out infinite;
+}
+
+@keyframes progressFill {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 70%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .works {
+        transform          : scale(0.26);
+        transform-origin   : top left;
+        /* margin-left     : 13%; */
+    }
+
+    .swiper-container {
+        width: 1431px !important;
+    }
+}

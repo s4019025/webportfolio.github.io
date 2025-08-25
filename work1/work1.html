@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="work1.css">
+    <title>COOK GALLERY - Food to Food Animation</title>
+</head>
+<body>
+    <!-- SVG Filters for Squiggly Text Animation -->
+    <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true">
+        <defs>
+            <filter id="squiggly-0">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-1">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-2">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-3">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-4">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <!-- Subtle squiggly filters -->
+            <filter id="squiggly-subtle-0">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" result="noise" seed="0"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-subtle-1">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" result="noise" seed="1"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+        </defs>
+    </svg>
+    
+    <div class="main-container">
+        <!-- Navigation background elements -->
+        <div class="nav-bg-teal"></div>
+        <div class="nav-bg-pink"></div>
+        
+        <!-- Navigation text -->
+        <a href="../contact/contacts.html" class="nav-contacts">Contacts</a>
+        <a href="../works/works.html" class="nav-works">Works</a>
+        <a href="../about/about.html" class="nav-about">About</a>
+        
+        <!-- Logo -->
+        <a href="../index.html"><img class="logo" src="logo Homepage.png" alt="Logo" /></a>
+        
+        <!-- Main title -->
+        <div class="main-title">
+            <span class="title-c squiggly-text">C</span>
+            <span class="title-o squiggly-text-slow">O</span>
+            <span class="title-o-blue squiggly-text">O</span>
+            <span class="title-gallery squiggly-text-fast">K GALLERRY</span>
+        </div>
+        
+        <!-- Subtitle -->
+        <div class="subtitle squiggly-text-subtle">Food to Food Animation</div>
+        
+        <!-- Project description -->
+        <div class="project-description squiggly-text-subtle">The project was being worked with pencil and hand-drawn artwork. Starting with 5 keyframes, then using lighting pad to make the next movement. <br/></div>
+        
+        <!-- Decorative images -->
+        <img class="decorative-image-1" src="Đầu.png" alt="Decorative element 1" />
+        <img class="decorative-image-2" src="Tay vẽ.png" alt="Decorative element 2" />
+        
+        <!-- Number indicators -->
+        <div class="number-1 squiggly-text-fast">1</div>
+        <div class="number-1-dot squiggly-text">1.</div>
+        
+        <!-- Main project image -->
+        <img class="gallery-small-6" src="image 13.png" alt="Main project image" />
+        
+        <!-- Hashtags -->
+        <div class="hashtag-fbf squiggly-text-fast">#FBFanimation</div>
+        <div class="hashtag-pencil squiggly-text">#PencilDrawings</div>
+        <div class="hashtag-china squiggly-text-slow">#ChinaCulture</div>
+        
+        <!-- Gallery images -->
+        <iframe class="main-project-image" 
+        src="https://www.youtube.com/embed/fwsGSLM6aT8"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+        <img class="gallery-small-1" src="image 7.png" alt="Gallery small 1" />
+        <img class="gallery-small-2" src="image 8.png" alt="Gallery small 2" />
+        <img class="gallery-small-3" src="image 9.png" alt="Gallery small 3" />
+        <img class="gallery-small-4" src="image 10.png" alt="Gallery small 4" />
+        <img class="decorative-image-3" src="trang trí work1.png" alt="Decorative element 3" />
+        <img class="gallery-vertical-1" src="image 11.png" alt="Gallery vertical 1" />
+        <img class="gallery-vertical-2" src="image 12.png" alt="Gallery vertical 2" />
+        <img class="gallery-vertical-3" src="image 14.png" alt="Gallery wide 1" />
+        <img class="gallery-wide-2" src="image 15.png" alt="Gallery wide 2" />
+        <img class="gallery-small-5" src="Tay vẽ.png" alt="Gallery small 5" />
+        <img class="decorative-image-4" src="Trang trí chim 1.png" alt="Decorative element 4" />
+        <img class="gallery-wide-3" src="Trang trí chim 2.png" alt="Gallery wide 3" />
+        
+        <!-- Footer -->
+        <div class="footer squiggly-text-slow">@2025 XiaoKai. All Rights Reserved.</div>
+
+        <a href="../work2/work2.html"><img src = "next.png" class="next-button"></a>
+    </div>
+</body>
+</html>

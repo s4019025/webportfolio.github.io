@@ -1,0 +1,705 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing            : border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    height: 100%;
+    cursor: url('../shared/cursor.png') 0 0, auto;
+}
+
+/* a blue color as a generic focus style */
+button:focus-visible {
+    outline: 2px solid #4a90e2 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+    text-decoration: none;
+    cursor         : url('../shared/cursor.png') 0 0, pointer;
+}
+
+.footer {
+    width         : 806px;
+    height        : 64px;
+    left          : 37%;
+    position      : absolute;
+    color         : #00C7AE;
+    font-size     : 30px;
+    font-family   : Chelsea Market;
+    font-weight   : 400;
+    line-height   : 99px;
+    letter-spacing: 6px;
+    word-wrap     : break-word;
+}
+
+/* Squiggly Text Animation */
+.squiggly-text {
+    filter   : url('#squiggly');
+    animation: squiggly 0.5s infinite;
+}
+
+.squiggly-text-slow {
+    filter   : url('#squiggly');
+    animation: squiggly 1s infinite;
+}
+
+.squiggly-text-fast {
+    filter   : url('#squiggly');
+    animation: squiggly 0.3s infinite;
+}
+
+.squiggly-text-subtle {
+    filter   : url('#squiggly-subtle');
+    animation: squiggly-subtle 0.8s infinite;
+}
+
+@keyframes squiggly {
+    0% {
+        filter: url('#squiggly-0');
+    }
+
+    25% {
+        filter: url('#squiggly-1');
+    }
+
+    50% {
+        filter: url('#squiggly-2');
+    }
+
+    75% {
+        filter: url('#squiggly-3');
+    }
+
+    100% {
+        filter: url('#squiggly-4');
+    }
+}
+
+@keyframes squiggly-subtle {
+    0% {
+        filter: url('#squiggly-subtle-0');
+    }
+
+    50% {
+        filter: url('#squiggly-subtle-1');
+    }
+
+    100% {
+        filter: url('#squiggly-subtle-0');
+    }
+}
+
+.contact {
+    background-color: #ffffff;
+    display         : grid;
+    font-family     : 'Chelsea Market', cursive;
+    justify-items   : center;
+    align-items     : start;
+    width           : 100vw;
+}
+
+.contact .overlap-wrapper {
+    background-color: #ffffff;
+    width           : 1440px;
+    height          : 1679px;
+}
+
+.contact .overlap {
+    position: relative;
+    width   : 1403px;
+    height  : 1475px;
+}
+
+.contact .overlap-group {
+    position: absolute;
+    width   : 517px;
+    height  : 83px;
+    top     : 56px;
+    left    : 887px;
+    z-index : 100;
+}
+
+.contact .header {
+    position        : fixed;
+    width           : 517px;
+    height          : 83px;
+    top             : 0;
+    left            : 60%;
+    background-color: transparent;
+    z-index         : 1000;
+}
+
+.contact .div {
+    position: relative;
+    width   : 517px;
+    height  : 83px;
+}
+
+.contact .rectangle {
+    top             : 8px;
+    left            : 16px;
+    background-color: #00c7ae;
+    position        : absolute;
+    width           : 501px;
+    height          : 74px;
+    border-radius   : 27px;
+}
+
+.contact .rectangle-2 {
+    top             : 0;
+    left            : 0;
+    background-color: #ff90b7;
+    position        : absolute;
+    width           : 501px;
+    height          : 74px;
+    border-radius   : 27px;
+}
+
+.contact .text-wrapper {
+    position      : fixed;
+    width         : 158px;
+    top           : 18px;
+    left          : 80%;
+    font-family   : 'Chelsea Market', cursive;
+    font-weight   : 400;
+    color         : #ffffff;
+    font-size     : 27px;
+    letter-spacing: 2.16px;
+    line-height   : 35px;
+    z-index       : 1000;
+    padding-right : 10px;
+}
+
+.contact .vector {
+    left    : 281px;
+    position: absolute;
+    width   : 3px;
+    height  : 48px;
+    top     : 14px;
+}
+
+.contact .vector-1 {
+    left    : 150px;
+    position: absolute;
+    width   : 3px;
+    height  : 48px;
+    top     : 14px;
+}
+
+.contact .text-wrapper-2 {
+    position      : fixed;
+    width         : 101px;
+    top           : 18px;
+    left          : 72%;
+    font-family   : 'Chelsea Market', cursive;
+    font-weight   : 400;
+    color         : #ffffff;
+    font-size     : 27px;
+    letter-spacing: 2.16px;
+    line-height   : 35px;
+    z-index       : 1000;
+    border-right  : 2px solid white;
+    padding-right : 10px;
+}
+
+.contact .text-wrapper-3 {
+    position      : fixed;
+    width         : 107px;
+    top           : 18px;
+    left          : 63%;
+    font-family   : 'Chelsea Market', cursive;
+    font-weight   : 400;
+    border-right  : 2px solid white;
+    color         : #ffffff;
+    z-index       : 1000;
+    font-size     : 27px;
+    letter-spacing: 2.16px;
+    line-height   : 35px;
+}
+
+.contact .img {
+    left    : 140px;
+    position: absolute;
+    width   : 3px;
+    height  : 48px;
+    top     : 14px;
+}
+
+.contact .overlap-2 {
+    position: absolute;
+    width   : 1350px;
+    height  : 1475px;
+    top     : 0;
+    left    : 0;
+}
+
+.logo-homepage {
+    position    : fixed;
+    width       : 170px;
+    height      : 170px;
+    top         : 23px;
+    left        : 16px;
+    aspect-ratio: 1;
+    transition  : transform 0.3s ease;
+    z-index     : 1000;
+}
+
+.contact .logo-homepage:hover {
+    transform: scale(1.1);
+}
+
+.contact .text-wrapper-4 {
+    position      : absolute;
+    width         : 452px;
+    top           : 277px;
+    left          : 89px;
+    font-family   : 'Chelsea Market', cursive;
+    font-weight   : 400;
+    color         : #f4dd00;
+    font-size     : 128px;
+    letter-spacing: 10.20px;
+    line-height   : 164px;
+    white-space   : nowrap;
+}
+
+.contact .text-wrapper-5 {
+    position      : absolute;
+    width         : 616px;
+    top           : 1224px;
+    left          : 734px;
+    font-family   : 'Chelsea Market', cursive;
+    font-weight   : 400;
+    color         : #257ff5;
+    font-size     : 72px;
+    letter-spacing: 5.76px;
+    line-height   : 92px;
+    white-space   : nowrap;
+}
+
+.contact .text-wrapper-6 {
+    position      : absolute;
+    width         : 452px;
+    top           : 230px;
+    left          : 647px;
+    font-family   : 'Chelsea Market', cursive;
+    font-weight   : 400;
+    color         : #f4dd00;
+    font-size     : 128px;
+    letter-spacing: 10.20px;
+    line-height   : 164px;
+    white-space   : nowrap;
+}
+
+.contact .nh-u-t {
+    position    : absolute;
+    width       : 371px;
+    height      : 463px;
+    top         : 75px;
+    left        : 355px;
+    aspect-ratio: 0.8;
+    animation   : float 2s ease-in-out infinite;
+}
+
+.contact .minh-ha-ig {
+    position    : absolute;
+    width       : 410px;
+    height      : 227px;
+    top         : 617px;
+    left        : 71px;
+    aspect-ratio: 1.81;
+}
+
+.contact .minh-ha-fb {
+    position    : absolute;
+    width       : 455px;
+    height      : 218px;
+    top         : 835px;
+    left        : 110px;
+    aspect-ratio: 2.09;
+}
+
+.contact .vng-thin-thn {
+    position    : absolute;
+    width       : 179px;
+    height      : 120px;
+    top         : 0;
+    left        : 338px;
+    aspect-ratio: 1.49;
+    animation   : float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.contact .minh-ha-mail {
+    position    : absolute;
+    width       : 447px;
+    height      : 244px;
+    top         : 1019px;
+    left        : 192px;
+    aspect-ratio: 1.83;
+}
+
+.contact .minh-ha-locket {
+    position    : absolute;
+    width       : 424px;
+    height      : 250px;
+    top         : 1225px;
+    left        : 284px;
+    aspect-ratio: 1.7;
+}
+
+.contact .trang-tr {
+    position    : absolute;
+    width       : 178px;
+    height      : 116px;
+    top         : 200px;
+    left        : 0;
+    aspect-ratio: 0.81;
+}
+
+.contact .logo-ig {
+    position    : absolute;
+    width       : 188px;
+    height      : 179px;
+    top         : 617px;
+    left        : 110px;
+    aspect-ratio: 1.05;
+}
+
+.contact .logo-FB {
+    position    : absolute;
+    width       : 80px;
+    height      : 116px;
+    top         : 855px;
+    left        : 284px;
+    aspect-ratio: 0.69;
+}
+
+.contact .logo-mail {
+    position    : absolute;
+    width       : 131px;
+    height      : 103px;
+    top         : 1050px;
+    left        : 303px;
+    aspect-ratio: 1.28;
+}
+
+.contact .logo-locket {
+    position    : absolute;
+    width       : 102px;
+    height      : 115px;
+    top         : 1277px;
+    left        : 435px;
+    aspect-ratio: 0.89;
+}
+
+.contact .b-khi-su {
+    position    : absolute;
+    width       : 690px;
+    height      : 775px;
+    top         : 503px;
+    left        : 660px;
+    aspect-ratio: 0.89;
+    animation   : colorChange 3s linear infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    25% {
+        filter: hue-rotate(90deg);
+    }
+
+    50% {
+        filter: hue-rotate(180deg);
+    }
+
+    75% {
+        filter: hue-rotate(270deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.contact .gi-tui-ln {
+    position    : absolute;
+    width       : 211px;
+    height      : 232px;
+    top         : 870px;
+    left        : 660px;
+    aspect-ratio: 0.91;
+    animation   : shake 0.5s ease-in-out infinite 1s;
+}
+
+.contact .gi-tui {
+    position    : absolute;
+    width       : 149px;
+    height      : 164px;
+    top         : 225px;
+    left        : 923px;
+    aspect-ratio: 0.91;
+    animation   : shake 0.5s ease-in-out infinite 1s;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.contact .text-wrapper-7 {
+    position      : absolute;
+    width         : 629px;
+    top           : 406px;
+    left          : 690px;
+    font-family   : 'Chelsea Market', cursive;
+    font-weight   : 400;
+    color         : #257ff5;
+    font-size     : 45px;
+    letter-spacing: 0;
+    line-height   : normal;
+}
+
+/* Custom Loading Animation */
+.loading-overlay {
+    position       : fixed;
+    top            : 0;
+    left           : 0;
+    width          : 100%;
+    height         : 100%;
+    background     : white;
+    display        : none;
+    justify-content: center;
+    align-items    : center;
+    z-index        : 99999;
+    backdrop-filter: blur(5px);
+}
+
+.loading-overlay.show {
+    display  : flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.loading-container {
+    text-align: center;
+    color     : white;
+}
+
+.loading-spinner {
+    width   : 80px;
+    height  : 80px;
+    margin  : 0 auto 20px;
+    position: relative;
+}
+
+.loading-spinner::before,
+.loading-spinner::after {
+    content      : '';
+    position     : absolute;
+    border-radius: 50%;
+    animation    : spin 2s linear infinite;
+}
+
+.loading-spinner::before {
+    width          : 100%;
+    height         : 100%;
+    background     : linear-gradient(45deg, #00c7ae, #ff90b7, #f4dd00, #257ff5);
+    background-size: 400% 400%;
+    animation      : spin 2s linear infinite, gradientShift 3s ease infinite;
+}
+
+.loading-spinner::after {
+    width     : 70%;
+    height    : 70%;
+    top       : 15%;
+    left      : 15%;
+    background: rgba(0, 0, 0, 0.9);
+    animation : spin 1.5s linear infinite reverse;
+}
+
+.loading-text {
+    font-family   : "Chelsea Market", cursive;
+    font-size     : 24px;
+    color         : #ffffff;
+    margin-top    : 20px;
+    letter-spacing: 2px;
+    animation     : pulse 2s ease-in-out infinite;
+}
+
+.loading-subtitle {
+    font-family: "Chelsea Market", cursive;
+    font-size  : 16px;
+    color      : #00c7ae;
+    margin-top : 10px;
+    opacity    : 0.8;
+}
+
+/* Loading Animation Keyframes */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity  : 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity  : 0.7;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Floating elements around the spinner */
+.loading-floating-element {
+    position     : absolute;
+    width        : 20px;
+    height       : 20px;
+    background   : #f4dd00;
+    border-radius: 50%;
+    animation    : orbit 4s linear infinite;
+}
+
+.loading-floating-element:nth-child(1) {
+    top            : -30px;
+    left           : 50%;
+    transform      : translateX(-50%);
+    background     : #f4dd00;
+    animation-delay: 0s;
+}
+
+.loading-floating-element:nth-child(2) {
+    top            : 50%;
+    right          : -30px;
+    transform      : translateY(-50%);
+    background     : #00d6b7;
+    animation-delay: 0.2s;
+}
+
+.loading-floating-element:nth-child(3) {
+    bottom         : -30px;
+    left           : 50%;
+    transform      : translateX(-50%);
+    background     : #257ff5;
+    animation-delay: 0.1s;
+}
+
+.loading-floating-element:nth-child(4) {
+    top            : 50%;
+    left           : -30px;
+    transform      : translateY(-50%);
+    background     : #ff90b7;
+    animation-delay: 0.2s;
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(40px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(40px) rotate(-360deg);
+    }
+}
+
+/* Loading progress bar */
+.loading-progress {
+    width        : 200px;
+    height       : 4px;
+    background   : rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    margin       : 20px auto 0;
+    overflow     : hidden;
+}
+
+.loading-progress-bar {
+    height       : 100%;
+    background   : linear-gradient(90deg, #00c7ae, #ff90b7, #f4dd00, #257ff5);
+    width        : 0%;
+    border-radius: 2px;
+    animation    : progressFill 2s ease-in-out infinite;
+}
+
+@keyframes progressFill {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 70%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

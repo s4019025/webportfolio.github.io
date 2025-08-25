@@ -1,0 +1,1044 @@
+/* Reset and Base Styles */
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+/* Custom Cursor - Multiple formats for browser compatibility */
+html,
+body {
+    cursor: url('../shared/cursor.png') 0 0, url('../shared/cursor.png') 16 16, auto;
+}
+
+
+
+/* Fallback for older browsers */
+html {
+    cursor: url('../shared/cursor.png') 0 0, auto;
+}
+
+/* Ensure cursor works on all elements */
+* {
+    cursor: inherit;
+}
+
+/* Force cursor on all elements */
+a,
+button,
+input,
+textarea,
+select,
+[role="button"] {
+    cursor: url('../shared/cursor.png') 0 0, url('../shared/cursor.png') 16 16, pointer;
+}
+
+
+body {
+    font-family   : 'Chelsea Market', cursive;
+    background    : white;
+    overflow-x    : hidden;
+    overflow-y    : auto;
+    /* transform  : scale(0.5); */
+}
+
+.container {
+    width          : 1440px;
+    height         : 2478px;
+    position       : relative;
+    background     : white;
+    /* margin-left : auto;
+    margin-right   : auto; */
+}
+
+/* Squiggly Text Animation */
+.squiggly-text {
+    filter   : url('#squiggly');
+    animation: squiggly 0.5s infinite;
+}
+
+.squiggly-text-slow {
+    filter   : url('#squiggly');
+    animation: squiggly 1s infinite;
+}
+
+.squiggly-text-fast {
+    filter   : url('#squiggly');
+    animation: squiggly 0.3s infinite;
+}
+
+.squiggly-text-subtle {
+    filter   : url('#squiggly-subtle');
+    animation: squiggly-subtle 0.8s infinite;
+}
+
+@keyframes squiggly {
+    0% {
+        filter: url('#squiggly-0');
+    }
+
+    25% {
+        filter: url('#squiggly-1');
+    }
+
+    50% {
+        filter: url('#squiggly-2');
+    }
+
+    75% {
+        filter: url('#squiggly-3');
+    }
+
+    100% {
+        filter: url('#squiggly-4');
+    }
+}
+
+@keyframes squiggly-subtle {
+    0% {
+        filter: url('#squiggly-subtle-0');
+    }
+
+    50% {
+        filter: url('#squiggly-subtle-1');
+    }
+
+    100% {
+        filter: url('#squiggly-subtle-0');
+    }
+}
+
+/* Face Image */
+.face-main {
+    width   : 598px;
+    height  : 518px;
+    left    : 462px;
+    top     : 0px;
+    position: absolute;
+}
+
+/* Eyes */
+.eye {
+    width   : 93px;
+    height  : 72px;
+    position: absolute;
+}
+
+@keyframes eyeMovement {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-24px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.right-eye {
+    left     : 828px;
+    top      : 320px;
+    animation: eyeMovement 1s ease-in-out infinite;
+}
+
+.left-eye {
+    left     : 605px;
+    top      : 320px;
+    animation: eyeMovement 1s ease-in-out infinite;
+}
+
+/* Cheek Touch */
+.cheek-touch {
+    width            : 428px;
+    height           : 270px;
+    left             : 343px;
+    top              : 392px;
+    position         : absolute;
+    cursor           : grab;
+    user-select      : none;
+    transform        : translate(0, 0);
+    transition       : transform 0.1s ease;
+    -webkit-user-drag: none;
+}
+
+.cheek-touch:active {
+    cursor    : grabbing;
+    transform : scale(1.1);
+    transform : translateX(-24px);
+    transition: transform 0.1s ease;
+}
+
+/* Navigation Background */
+.nav-bg-teal {
+    width        : 534px;
+    height       : 79px;
+    left         : 962px;
+    top          : 69px;
+    position     : fixed;
+    background   : #00C7AE;
+    border-radius: 29px;
+    z-index      : 1000;
+}
+
+.nav-bg-pink {
+    width        : 534px;
+    height       : 79px;
+    left         : 946px;
+    top          : 60px;
+    position     : fixed;
+    background   : #FF90B7;
+    z-index      : 1000;
+    border-radius: 29px;
+}
+
+/* Navigation Text */
+.nav-text {
+    position       : fixed;
+    color          : white;
+    font-size      : 29px;
+    font-family    : Chelsea Market, cursive;
+    font-weight    : 400;
+    line-height    : 37px;
+    text-decoration: none;
+    letter-spacing : 2.3px;
+    word-wrap      : break-word;
+    z-index        : 1000;
+}
+
+.contacts {
+    width : 168px;
+    height: 46px;
+    left  : 1272px;
+    top   : 80px;
+}
+
+.works {
+    width        : 119px;
+    height       : 46px;
+    left         : 1123px;
+    top          : 80px;
+    border-right : 2px solid white;
+    padding-right: 8px;
+}
+
+.about {
+    width        : 114px;
+    height       : 46px;
+    left         : 984px;
+    top          : 80px;
+    border-right : 2px solid white;
+    padding-right: 8px;
+}
+
+/* Hat and String */
+.hat {
+    width   : 310px;
+    height  : 298px;
+    left    : 366px;
+    top     : 0px;
+    position: absolute;
+}
+
+.hat-string {
+    width            : 102px;
+    height           : 252px;
+    left             : 370px;
+    top              : 176px;
+    position         : absolute;
+    transform        : rotate(-26deg);
+    user-select      : none;
+    -webkit-user-drag: none;
+    transform-origin : top left;
+    animation        : swingString 3s ease-in-out infinite;
+}
+
+@keyframes swingString {
+    0% {
+        transform: rotate(-26deg);
+    }
+
+    50% {
+        transform: rotate(-16deg);
+    }
+
+    100% {
+        transform: rotate(-26deg);
+    }
+}
+
+/* Logo */
+.logo {
+    width     : 182px;
+    height    : 181px;
+    left      : 17px;
+    top       : 25px;
+    position  : fixed;
+    z-index   : 1000;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+/* Hand */
+.hand {
+    width           : 282px;
+    height          : 271px;
+    left            : 850px;
+    top             : 363px;
+    position        : absolute;
+    animation       : waveHand 2s ease-in-out infinite;
+    transform-origin: bottom center;
+}
+
+@keyframes waveHand {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Hero Text */
+.hero-subtitle {
+    width : 226px;
+    height: 16px;
+
+    left       : 664px;
+    top        : 562px;
+    position   : absolute;
+    color      : #00C7AE;
+    font-size  : 19px;
+    font-family: Chelsea Market, cursive;
+    font-weight: 400;
+    word-wrap  : break-word;
+}
+
+.hero-subtitle span {
+    display     : inline-block;
+    /* Allows transform to work */
+    /* animation: dance 1s infinite alternate; */
+    /* Apply animation */
+}
+
+/* Staggered animation delay for subtitle letters */
+.hero-subtitle span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.hero-subtitle span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.hero-subtitle span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.hero-subtitle span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.hero-subtitle span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.hero-subtitle span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.hero-subtitle span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.hero-subtitle span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.hero-subtitle span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.hero-subtitle span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+.hero-title {
+    width      : 563px;
+    height     : 89px;
+    left       : 506px;
+    top        : 684px;
+    position   : absolute;
+    color      : #297FF6;
+    font-size  : 64px;
+    font-family: Chelsea Market, cursive;
+    font-weight: 400;
+    word-wrap  : break-word;
+}
+
+.hero-title span {
+    display  : inline-block;
+    /* Allows transform to work */
+    animation: dance 1s infinite alternate;
+    /* Apply animation */
+}
+
+/* Staggered animation delay for title letters */
+.hero-title span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.hero-title span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.hero-title span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.hero-title span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.hero-title span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.hero-title span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.hero-title span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.hero-title span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.hero-title span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.hero-title span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+.hero-title span:nth-child(11) {
+    animation-delay: 1.0s;
+}
+
+.hero-title span:nth-child(12) {
+    animation-delay: 1.1s;
+}
+
+.hero-title span:nth-child(13) {
+    animation-delay: 1.2s;
+}
+
+.hero-title span:nth-child(14) {
+    animation-delay: 1.3s;
+}
+
+.hero-title span:nth-child(15) {
+    animation-delay: 1.4s;
+}
+
+.hero-title span:nth-child(16) {
+    animation-delay: 1.5s;
+}
+
+.hero-title span:nth-child(17) {
+    animation-delay: 1.6s;
+}
+
+.hero-title span:nth-child(18) {
+    animation-delay: 1.7s;
+}
+
+.hero-title span:nth-child(19) {
+    animation-delay: 1.8s;
+}
+
+.hero-title span:nth-child(20) {
+    animation-delay: 1.9s;
+}
+
+.hero-portfolio {
+    width         : 689px;
+    height        : 124px;
+    left          : 423px;
+    top           : 745px;
+    position      : absolute;
+    color         : #F4DD00;
+    font-size     : 112px;
+    font-family   : Chelsea Market, cursive;
+    font-weight   : 400;
+    line-height   : 144px;
+    letter-spacing: 9px;
+    word-wrap     : break-word;
+}
+
+.hero-portfolio span {
+    display  : inline-block;
+    /* Allows transform to work */
+    animation: dance 1s infinite alternate;
+    /* Apply animation */
+}
+
+/* Staggered animation delay for portfolio letters */
+.hero-portfolio span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.hero-portfolio span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.hero-portfolio span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.hero-portfolio span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.hero-portfolio span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.hero-portfolio span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.hero-portfolio span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.hero-portfolio span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.hero-portfolio span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.hero-portfolio span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+.hero-portfolio span:nth-child(11) {
+    animation-delay: 1.0s;
+}
+
+.hero-portfolio span:nth-child(12) {
+    animation-delay: 1.1s;
+}
+
+.hero-portfolio span:nth-child(13) {
+    animation-delay: 1.2s;
+}
+
+.hero-portfolio span:nth-child(14) {
+    animation-delay: 1.3s;
+}
+
+.hero-portfolio span:nth-child(15) {
+    animation-delay: 1.4s;
+}
+
+.hero-portfolio span:nth-child(16) {
+    animation-delay: 1.5s;
+}
+
+.hero-portfolio span:nth-child(17) {
+    animation-delay: 1.6s;
+}
+
+.hero-portfolio span:nth-child(18) {
+    animation-delay: 1.7s;
+}
+
+.hero-portfolio span:nth-child(19) {
+    animation-delay: 1.8s;
+}
+
+.hero-portfolio span:nth-child(20) {
+    animation-delay: 1.9s;
+}
+
+/* Magic Pen */
+.magic-pen {
+    width   : 191px;
+    height  : 239px;
+    left    : 1010px;
+    top     : 663px;
+    position: absolute;
+}
+
+/* Two Cats */
+.two-cats {
+    width   : 751px;
+    height  : 483px;
+    left    : 17px;
+    top     : 1928px;
+    position: absolute;
+}
+
+/* AKA Text */
+.aka-text {
+    width         : 259px;
+    height        : 124px;
+    left          : 992px;
+    top           : 2135px;
+    position      : absolute;
+    color         : #F4DD00;
+    font-size     : 112px;
+    font-family   : Chelsea Market, cursive;
+    font-weight   : 400;
+    line-height   : 144px;
+    letter-spacing: 9px;
+    word-wrap     : break-word;
+}
+
+/* Pointing Hand */
+.pointing-hand {
+    width    : 225px;
+    height   : 327px;
+    left     : 651px;
+    top      : 999px;
+    position : absolute;
+    animation: pointingHandMovement 1s ease-in-out infinite;
+}
+
+@keyframes pointingHandMovement {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(24px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Cat Ruler */
+.cat-ruler {
+    width    : 570px;
+    height   : 189px;
+    left     : 107px;
+    top      : 2070px;
+    position : absolute;
+    animation: catRulerMovement 4s ease-in-out infinite;
+}
+
+@keyframes catRulerMovement {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(32px, -16px);
+    }
+
+    50% {
+        transform: translate(64px, 0);
+    }
+
+    75% {
+        transform: translate(32px, 16px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* About Text */
+.about-text {
+    width         : 707px;
+    height        : 64px;
+    left          : 768px;
+    top           : 2054px;
+    position      : absolute;
+    color         : #257FF5;
+    font-size     : 38px;
+    font-family   : Chelsea Market, cursive;
+    font-weight   : 400;
+    line-height   : 49px;
+    letter-spacing: 3px;
+    word-wrap     : break-word;
+}
+
+/* Name */
+.name {
+    width         : 550px;
+    height        : 64px;
+    left          : 894px;
+    top           : 2977px;
+    position      : absolute;
+    color         : #00C7AE;
+    font-size     : 77px;
+    font-family   : Chelsea Market, cursive;
+    font-weight   : 400;
+    line-height   : 99px;
+    letter-spacing: 6px;
+    word-wrap     : break-word;
+}
+
+.footer {
+    width         : 806px;
+    height        : 64px;
+    left          : 27%;
+    top           : 3380px;
+    position      : absolute;
+    color         : #00C7AE;
+    font-size     : 30px;
+    font-family   : Chelsea Market, cursive !important;
+    font-weight   : 400;
+    line-height   : 99px;
+    letter-spacing: 6px;
+    word-wrap     : break-word;
+}
+
+/* Paper Planes */
+@keyframes plane1Movement {
+    0% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate(-240px, 240px);
+    }
+}
+
+@keyframes plane2Movement {
+    0% {
+        transform: rotate(0deg) translate(0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate(-160px, 160px);
+    }
+}
+
+.paper-plane-1 {
+    width           : 275px;
+    height          : 186px;
+    left            : 1065px;
+    top             : 2338px;
+    position        : absolute;
+    transform       : rotate(0deg);
+    transform-origin: top left;
+    animation       : plane1Movement 2s ease-in-out infinite alternate;
+}
+
+.paper-plane-2 {
+    width           : 240px;
+    height          : 296px;
+    left            : 1257px;
+    top             : 2228px;
+    position        : absolute;
+    transform       : rotate(30deg);
+    transform-origin: top left;
+    animation       : plane2Movement 2s ease-in-out infinite alternate;
+}
+
+/* Background Images */
+.bg-img-1 {
+    left            : 1175px;
+    top             : 402px;
+    position        : absolute;
+    transform-origin: top left;
+    transition      : transform 0.3s ease;
+}
+
+.bg-img-1:hover {
+    transform: scale(1.05);
+}
+
+.bg-img-2 {
+    left            : 0px;
+    top             : 454px;
+    position        : absolute;
+    transform-origin: top left;
+    transition      : transform 0.3s ease;
+}
+
+.bg-img-2:hover {
+    transform: scale(1.05);
+}
+
+/* Map */
+.map {
+    width   : 909px;
+    height  : 792px;
+    left    : 37px;
+    top     : 2518px;
+    position: absolute;
+}
+
+/* Location Marker */
+.location-marker {
+    width           : 154px;
+    height          : 198px;
+    left            : 691px;
+    top             : 2844px;
+    position        : absolute;
+    transform       : rotate(-6deg);
+    transform-origin: top left;
+    animation       : markerUpDown 1s ease-in-out infinite alternate;
+}
+
+@keyframes markerUpDown {
+    0% {
+        transform: rotate(-6deg) translateY(0) scale(1);
+    }
+
+    100% {
+        transform: rotate(-6deg) translateX(-24px) translateY(-48px) scale(1.3);
+    }
+}
+
+
+
+
+
+/* Custom Loading Animation */
+.loading-overlay {
+    position       : fixed;
+    top            : 0;
+    left           : 0;
+    width          : 100%;
+    height         : 100%;
+    background     : white;
+    display        : none;
+    justify-content: center;
+    align-items    : center;
+    z-index        : 99999;
+    backdrop-filter: blur(5px);
+}
+
+.loading-overlay.show {
+    display  : flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.loading-container {
+    text-align: center;
+    color     : white;
+}
+
+.loading-spinner {
+    width   : 80px;
+    height  : 80px;
+    margin  : 0 auto 20px;
+    position: relative;
+}
+
+.loading-spinner::before,
+.loading-spinner::after {
+    content      : '';
+    position     : absolute;
+    border-radius: 50%;
+    animation    : spin 2s linear infinite;
+}
+
+.loading-spinner::before {
+    width          : 100%;
+    height         : 100%;
+    background     : linear-gradient(45deg, #00c7ae, #ff90b7, #f4dd00, #257ff5);
+    background-size: 400% 400%;
+    animation      : spin 2s linear infinite, gradientShift 3s ease infinite;
+}
+
+.loading-spinner::after {
+    width     : 70%;
+    height    : 70%;
+    top       : 15%;
+    left      : 15%;
+    background: rgba(0, 0, 0, 0.9);
+    animation : spin 1.5s linear infinite reverse;
+}
+
+.loading-text {
+    font-family   : "Chelsea Market", cursive;
+    font-size     : 24px;
+    color         : #ffffff;
+    margin-top    : 20px;
+    letter-spacing: 2px;
+    animation     : pulse 2s ease-in-out infinite;
+}
+
+.loading-subtitle {
+    font-family: "Chelsea Market", cursive;
+    font-size  : 16px;
+    color      : #00c7ae;
+    margin-top : 10px;
+    opacity    : 0.8;
+}
+
+/* Loading Animation Keyframes */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity  : 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity  : 0.7;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Floating elements around the spinner */
+.loading-floating-element {
+    position     : absolute;
+    width        : 20px;
+    height       : 20px;
+    background   : #f4dd00;
+    border-radius: 50%;
+    animation    : orbit 4s linear infinite;
+}
+
+.loading-floating-element:nth-child(1) {
+    top            : -30px;
+    left           : 50%;
+    transform      : translateX(-50%);
+    background     : #f4dd00;
+    animation-delay: 0.3s;
+}
+
+.loading-floating-element:nth-child(2) {
+    top            : 50%;
+    right          : -30px;
+    transform      : translateY(-50%);
+    background     : #00d6b7;
+    animation-delay: 0.2s;
+}
+
+.loading-floating-element:nth-child(3) {
+    bottom         : -30px;
+    left           : 50%;
+    transform      : translateX(-50%);
+    background     : #257ff5;
+    animation-delay: 0.1s;
+}
+
+.loading-floating-element:nth-child(4) {
+    top            : 50%;
+    left           : -30px;
+    transform      : translateY(-50%);
+    background     : #ff90b7;
+    animation-delay: 0.5s;
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(40px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(40px) rotate(-360deg);
+    }
+}
+
+/* Loading progress bar */
+.loading-progress {
+    width        : 200px;
+    height       : 4px;
+    background   : rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    margin       : 20px auto 0;
+    overflow     : hidden;
+}
+
+.loading-progress-bar {
+    height       : 100%;
+    background   : linear-gradient(90deg, #00c7ae, #ff90b7, #f4dd00, #257ff5);
+    width        : 0%;
+    border-radius: 2px;
+    animation    : progressFill 2s ease-in-out infinite;
+}
+
+@keyframes progressFill {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 70%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/* Keyframes for the dancing animation */
+@keyframes dance {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-16px) rotate(5deg);
+        /* Move up and slightly rotate */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work 5 - 2D Animation Poem</title>
+    <link rel="stylesheet" href="work5.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- SVG Filters for Squiggly Text Animation -->
+    <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true">
+        <defs>
+            <filter id="squiggly-0">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-1">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-2">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-3">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-4">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <!-- Subtle squiggly filters -->
+            <filter id="squiggly-subtle-0">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" result="noise" seed="0"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-subtle-1">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" result="noise" seed="1"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+        </defs>
+    </svg>
+    
+    <div class="main-container">
+        <!-- Navigation background elements -->
+        <div class="nav-bg-teal"></div>
+        <div class="nav-bg-pink"></div>
+        
+        <!-- Navigation text -->
+        <a href="../contact/contacts.html" class="nav-contacts">Contacts</a>
+        <a href="../works/works.html" class="nav-works">Works</a>
+        <a href="../about/about.html" class="nav-about">About</a>
+        
+        <!-- Logo -->
+        <a href="../index.html"><img class="logo" src="logo Homepage.png" alt="Logo" /></a>
+        
+        <!-- Main title -->
+        <div class="main-title">
+            <span class="title-c squiggly-text">C</span>
+            <span class="title-o squiggly-text-slow">O</span>
+            <span class="title-o-blue squiggly-text">O</span>
+            <span class="title-gallery squiggly-text-fast">K GALLERRY</span>
+        </div>
+        
+        <!-- Subtitle -->
+        <div class="subtitle squiggly-text-subtle">2D Animation Poem</div>
+        
+        <!-- Decorative images -->
+        <img class="decorative-image-1" src="Scene_1 59 1.png" alt="Decorative Element 1" />
+        <img class="decorative-image-2" src="Scene_1 81 1.png" alt="Decorative Element 2" />
+        
+        <!-- Number indicators -->
+        <div class="number-5 squiggly-text-fast">5</div>
+        <div class="number-5-dot squiggly-text">5.</div>
+        
+        <!-- Cover section -->
+        <div class="cover-section">
+            <img class="cover-background" src="Scene5 (2) 1.png" alt="Cover Background" />
+            <div class="cover-title squiggly-text-slow">Water</div>
+            <div class="cover-author squiggly-text-subtle">Hoang Cao Khai<br/>S-4019025<br/><br/><br/><br/></div>
+            <div class="cover-footer">
+                <div class="footer-course squiggly-text-fast">COMM2748</div>
+                <div class="footer-studio squiggly-text">Digital Media Studio 3</div>
+                <div class="footer-semester squiggly-text-subtle">Semester 3/ 2024</div>
+            </div>
+            <div class="cover-page-number"></div>
+            <div class="cover-slide-number">
+                <div class="slide-number-text squiggly-text-fast">01</div>
+            </div>
+        </div>
+        
+        <!-- Gallery Swiper -->
+        <div class="gallery-swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img class="gallery-image" src="Scene_1 (1) 1.png" alt="Gallery Image 1" />
+                       
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img class="gallery-image" src="Scene_2 (1) 1.png" alt="Gallery Image 2" />
+                      
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img class="gallery-image" src="Scene_3 1.png" alt="Gallery Image 3" />
+                        
+                    </div>
+                </div>
+                
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img class="gallery-image" src="Scene4 (1) 1.png" alt="Gallery Image 4" />
+                  
+                    </div>
+                </div>
+                
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img class="gallery-image" src="Scene5 (1) 1.png" alt="Gallery Image 5" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project message -->
+        <div class="project-message squiggly-text-fast">AFTER EFFECT HELP ME WITH THIS PROJECT!</div>
+        
+        <!-- Main project image -->
+        <iframe class="main-project-image" 
+            src="https://www.youtube.com/embed/3mhODIX4pGo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        
+        <!-- Hashtags -->
+        <div class="hashtag-2d-animation squiggly-text-fast">#2Danimation</div>
+        <div class="hashtag-2d-design squiggly-text">#2Ddesign</div>
+        <div class="hashtag-keyframe squiggly-text-slow">#KeyFrame</div>
+        
+        <!-- Decorative elements -->
+        <img class="decorative-bottom" src="Scene_1 81 3.png" alt="Decorative Bottom" />
+        <img class="decorative-rotated-1" src="Scene_1 (3) 1.png" alt="Decorative Rotated 1" />
+        <img class="decorative-rotated-2" src="Scene_1 (3) 2.png" alt="Decorative Rotated 2" />
+        
+        <!-- Footer -->
+        <div class="footer squiggly-text-slow">@2025 XiaoKai. All Rights Reserved.</div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="work5.js"></script>
+</body>
+</html>
