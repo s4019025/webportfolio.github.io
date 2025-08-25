@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoa Thanh Que - Portfolio</title>
+    <link rel="stylesheet" href="shared/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-container">
+            <div class="loading-spinner">
+                <div class="loading-floating-element"></div>
+                <div class="loading-floating-element"></div>
+                <div class="loading-floating-element"></div>
+                <div class="loading-floating-element"></div>
+            </div>
+            <div class="loading-text">Loading...</div>
+            <div class="loading-subtitle">Please wait while we prepare your experience</div>
+            <div class="loading-progress">
+                <div class="loading-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- SVG Filters for Squiggly Text Animation -->
+    <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true">
+        <defs>
+            <filter id="squiggly-0">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-1">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-2">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-3">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-4">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <!-- Subtle squiggly filters -->
+            <filter id="squiggly-subtle-0">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" result="noise" seed="0"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-subtle-1">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" result="noise" seed="1"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+        </defs>
+    </svg>
+    
+    <div class="container">
+        <!-- Floating Particles for Magic Effect -->
+        <div class="floating-particle"></div>
+        <div class="floating-particle"></div>
+        <div class="floating-particle"></div>
+        <div class="floating-particle"></div>
+        <div class="floating-particle"></div>
+        
+        <!-- Sparkles around Hero Text -->
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        
+        <!-- Face Image -->
+        <img class="face-main" src="asset/Mặt chán.png" alt="Face" />
+        
+        <!-- Eyes -->
+        <img class="eye right-eye" src="asset/Mắt phải.png" alt="Right Eye" />
+        <img class="eye left-eye" src="asset/Mắt Trái.png" alt="Left Eye" />
+        
+        <!-- Cheek Touch -->
+        <img class="cheek-touch" src="asset/Tay véo má.png" alt="Cheek Touch" />
+        
+        <!-- Navigation Background -->
+        <div class="nav-bg-teal"></div>
+        <div class="nav-bg-pink"></div>
+        
+        <!-- Navigation Text -->
+        <a href="contact/contacts.html" class="nav-text contacts">Contacts</a>
+        <a href="works/works.html" class="nav-text works">Works</a>
+        <a href="about/about.html" class="nav-text about">About</a>
+        
+        <!-- Hat and String -->
+        <img class="hat" src="asset/Mũ.png" alt="Hat" />
+        <img class="hat-string" src="asset/Dây mũ.png" alt="Hat String" />
+        
+        <!-- Logo -->
+        <a href="index.html">
+            <img class="logo" src="asset/logo Homepage.png" alt="Logo" />
+        </a>
+        
+        <!-- Hand -->
+        <img class="hand" src="asset/Tay tớ.png" alt="Hand" />
+        
+        <!-- Hero Text -->
+        <div class="hero-subtitle squiggly-text-fast">
+            <span>*</span><span>M</span><span>E</span><span>T</span><span> </span><span>M</span><span>O</span><span>I</span><span> </span><span>V</span><span>O</span><span> </span><span>C</span><span>U</span><span>N</span><span>G</span><span>*</span>
+        </div>
+        <div class="hero-title squiggly-text">
+            <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span><span> </span><span>t</span><span>o</span><span> </span><span>M</span><span>a</span>
+        </div>
+        <div class="hero-portfolio squiggly-text-slow">
+            <span>P</span><span>o</span><span>R</span><span>T</span><span>F</span><span>o</span><span>L</span><span>i</span><span>O</span>
+        </div>
+        
+        <!-- Magic Pen -->
+        <img class="magic-pen" src="asset/But may.png" alt="Magic Pen" />
+        
+        <!-- Two Cats -->
+        <img class="two-cats" src="asset/2 be meo.png" alt="Two Cats" />
+        
+        <!-- AKA Text -->
+        <div class="aka-text squiggly-text-fast">AKA</div>
+        
+        <!-- Pointing Hand -->
+        <img class="pointing-hand" src="asset/Tay chỉ xuống.png" alt="Pointing Hand" />
+        
+        <!-- Cat Ruler -->
+        <img class="cat-ruler" src="asset/thước mèo.png" alt="Cat Ruler" />
+        
+        <!-- About Text -->
+        <div class="about-text squiggly-text-subtle">Hi, its me *Be Khai nguoi Hoa*</div>
+        
+        <!-- Name -->
+        <div class="name squiggly-text-slow">Hoa Thanh Que</div>
+        
+        <!-- Paper Planes -->
+        <img class="paper-plane-1" src="asset/Scene_1 45 1.png" alt="Paper Plane 1" />
+        <img class="paper-plane-2" src="asset/Scene_1 49 1.png" alt="Paper Plane 2" />
+        
+        <!-- Background Images -->
+        <img class="bg-img-1" src="asset/anh1 home.png" alt="Background 1" />
+        <img class="bg-img-2" src="asset/anh2 home.png" alt="Background 2" />
+        
+        <!-- Map -->
+        <img class="map" src="asset/Bản đồ.png" alt="Map" />
+        
+        <!-- Location Marker -->
+        <img class="location-marker" src="asset/Vị trí.png" alt="Location" />
+
+        <div class="footer squiggly-text-slow">@2025 XiaoKai. All Rights Reserved.</div>
+    </div>
+    <script src="shared/script.js"></script>
+</body>
+</html>
