@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work 4 - 2D Short Movie</title>
+    <link rel="stylesheet" href="work4.css">
+</head>
+<body>
+    <!-- SVG Filters for Squiggly Text Animation -->
+    <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true">
+        <defs>
+            <filter id="squiggly-0">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-1">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-2">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-3">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-4">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <!-- Subtle squiggly filters -->
+            <filter id="squiggly-subtle-0">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" result="noise" seed="0"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+            <filter id="squiggly-subtle-1">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" result="noise" seed="1"/>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+        </defs>
+    </svg>
+    
+    <div class="main-container">
+        <!-- Navigation background elements -->
+        <div class="nav-bg-teal"></div>
+        <div class="nav-bg-pink"></div>
+        
+        <!-- Navigation text -->
+        <a href="../contact/contacts.html" class="nav-contacts">Contacts</a>
+        <a href="../works/works.html" class="nav-works">Works</a>
+        <a href="../about/about.html" class="nav-about">About</a>
+        
+        <!-- Logo -->
+        <a href="../index.html"><img class="logo" src="logo Homepage.png" alt="Logo" /></a>
+        
+        <!-- Main title -->
+        <div class="main-title">
+            <span class="title-c squiggly-text">C</span>
+            <span class="title-o squiggly-text-slow">O</span>
+            <span class="title-o-blue squiggly-text">O</span>
+            <span class="title-gallery squiggly-text-fast">K GALLERRY</span>
+        </div>
+        
+        <!-- Subtitle -->
+        <div class="subtitle squiggly-text-subtle">2D Short Movie</div>
+        
+        <!-- Decorative images -->
+        <img class="decorative-image-1" src="Scene_1 59 1.png" alt="Decorative element 1" />
+        <img class="decorative-image-2" src="Scene_1 81 1.png" alt="Decorative element 2" />
+        
+        <!-- Number indicators -->
+        <div class="number-4 squiggly-text-fast">4</div>
+        <div class="number-4-dot squiggly-text">4.</div>
+        
+        <!-- Main project image -->
+        <iframe class="main-project-image" 
+        src="https://www.youtube.com/embed/jZhbfPQvgrE"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+        <!-- Project description -->
+        <div class="project-description squiggly-text-subtle">Using Frame by Frame technique to make this movie ;)</div>
+        
+        <!-- Gallery images -->
+        <img class="gallery-image-1" src="image 18.png" alt="Gallery image 1" />
+        <img class="gallery-image-2" src="image 19.png" alt="Gallery image 2" />
+        <img class="gallery-image-3" src="image 20.png" alt="Gallery image 3" />
+        <img class="gallery-image-4" src="image 21.png" alt="Gallery image 4" />
+        
+        <!-- Decorative O letters -->
+        <div class="o-letter-1 squiggly-text-fast">O</div>
+        <div class="o-letter-2 squiggly-text">O</div>
+        <div class="o-letter-3 squiggly-text-slow">O</div>
+        <div class="o-letter-4 squiggly-text">O</div>
+        <div class="o-letter-5 squiggly-text-fast">O</div>
+        <div class="o-letter-6 squiggly-text-slow">O</div>
+        
+        <!-- Decorative elements -->
+        <img class="decorative-bottom" src="Scene_1 81 2.png" alt="Decorative element bottom" />
+        <img class="decorative-rotated-1" src="Untitled_Artwork (91) 1.png" alt="Decorative rotated element 1" />
+        <img class="decorative-rotated-2" src="Untitled_Artwork (92) 1.png" alt="Decorative rotated element 2" />
+        
+        <!-- Hashtags -->
+        <div class="hashtag-2d-animation squiggly-text-fast">#2Danimation</div>
+        <div class="hashtag-procreate squiggly-text">#Procreate</div>
+        <div class="hashtag-2d-design squiggly-text-slow">#2Ddesign</div>
+        
+        <!-- Footer -->
+        <div class="footer squiggly-text-slow">@2025 XiaoKai. All Rights Reserved.</div>
+
+        <a href="../work5/work5.html"><img src = "next.png" class="next-button"></a>
+    </div>
+</body>
+</html>
